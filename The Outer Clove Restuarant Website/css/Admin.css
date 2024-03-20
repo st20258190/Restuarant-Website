@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:'Poppins', 'Times New Roman', Times, serif
+
+}
+
+.Content{
+    
+    padding: 1%;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.nav{
+    text-align: center;
+    background-color: #303030;
+}
+.nav ul{
+    list-style-type: none;
+}
+    
+.nav ul li{
+    display: inline;
+    padding: 1%;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    font-weight:500;
+    font-size: 20px;
+    color:#fff;
+}
+ 
+.nav ul li a:hover{
+color:#FFC200 ;
+} 
+
+
+
+.main{
+    background-color:#f1f2f6;
+    
+}
+
+
+
+.footer{
+   background-color: #303030;
+   color: #fff;
+}
+
+.FH1{
+    text-align: center;
+}
+
+.text-center{
+    text-align: center;
+}
+    
+.TBStyle {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    
+}
+
+.TBStyle th, .TBStyle td {
+    border: 1px solid #dddddd;
+    padding: 20px;
+    text-align: left;
+}
+
+.TBStyle th {
+    background-color: #FFC200;
+    color: #000000;
+}
+
+.TBStyle tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+.button{
+    background-color: #FFC200;
+    padding: 1%;
+    color: #0c0000;
+    text-decoration: none;
+    font-weight: 500;
+    
+   
+}
+
+.button:hover{
+    background-color: #ffd64e;
+}
+
+
+.FButton{
+    background-color: #FFC200;
+    padding: 5px;
+    color: #0c0000;
+    text-decoration: none;
+    font-weight: 500;
+    
+   
+}
+
+.FButton:hover{
+    background-color: #ffd64e;
+}
+
+
+.TBStyle2{
+    width: 30%;
+}
+
+/* Style for the input element */
+input {
+  padding: 10px; 
+  margin: 5px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
+  font-size: 14px;
+}
+
+
+input:focus {
+  outline: none;
+  border-color: #e4b20e; 
+  box-shadow: 0 0 5px #d7a80b; 
+}
+
+
+input::placeholder {
+  color: #030303;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+
+input:hover::placeholder {
+  color: #555; 
+  transform: translateY(-3px); 
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 60%; 
+    max-width: 600px; 
+    height: 60vw; 
+    max-height: 600px; 
+}
+
+.LoginForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.LoginH1 {
+    text-align: center;
+    color: #333;
+}
+
+.AdminLoginH2{
+
+    margin-top: 10px;
+    margin-bottom: 25px;
+    text-align: center;
+    color: #333;
+}
+
+.LoginLabel {
+    margin-bottom: 8px;
+    margin-top: 2px;
+    color: #060606;
+    font-size: 20px;
+}
+
+.LoginInput {
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 50%;
+    height: 30px;
+}
+
+.LoginButton {
+    background-color: #FFC200;
+    color: #040404;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 50%;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+.LoginButton:hover {
+    background-color: #cccccc;
+    color: #000000;
+}
+
+.Error{
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(255, 0, 0);
+}
+
+/* styles.css */
+
+.AddFoodH1 {
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+}
+
+.FoodForm {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.FoodFormLabel {
+    display: block;
+    margin-bottom: 20px;
+    color: #333;
+    margin-top: 30px;
+}
+
+.FoodFormInput,
+.FoodFormSelect {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.FoodFormTextarea{
+    width: 90%;
+    height: 30%;
+    padding: 10px;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px; 
+}
+
+.FoodFormTextarea {
+    resize: vertical; 
+}
+
+.FoodFormButton {
+    background-color: #FFC200;
+    color: #000000;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.FoodFormButton:hover {
+    background-color: #45a049;
+}

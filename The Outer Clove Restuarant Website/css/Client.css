@@ -1,0 +1,786 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    text-transform: capitalize;
+    outline: none;
+    box-sizing: border-box;
+    border: none;
+    margin: 0;
+    padding: 0;
+    transition: all .3s linear;
+    
+    
+    
+}
+
+    
+
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 5.5rem;
+    overflow-x: hidden;
+    font-size: 62.5% ;
+    background-image: linear-gradient(to right top, #1e1f20, #202224, #222527, #25282b, #272b2f);
+    
+    
+}
+
+
+section{
+    padding: 2rem 9%;
+    background-image: linear-gradient(to right top, #1e1f20, #202224, #222527, #25282b, #272b2f);
+    padding-top: 1%;
+    
+    
+}
+
+section:nth-child(even){
+    background: #eee;
+}
+
+header{
+    position: fixed;
+    z-index: 1000;
+    background-image: linear-gradient(to right top, #1e1f20, #202224, #222527, #25282b, #272b2f);
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem 7%;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    
+}
+
+.navigationBar a{
+
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    color: #ffff;
+    padding: .5rem 1.5rem;
+
+}
+
+.navigationBar a:hover{
+
+    color: #0a0a0a;
+    background-color: #FFC200;
+}
+
+.navigationBar a.active{
+
+    color: #FFC200;
+}
+
+.headerIcons i {
+      margin-left: .5rem;
+      cursor: pointer;
+      height: 4.5rem;
+      line-height: 4.5rem;
+      width: 4.5rem;
+      font-size: 1.7rem;
+      color: #000000;
+      border-radius: 50%;
+      text-align: center;
+      background: #FFC200;
+
+}
+
+.headerIcons a {
+    margin-left: .5rem;
+    cursor: pointer;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    width: 4.5rem;
+    font-size: 1.7rem;
+    color: #000000;
+    border-radius: 50%;
+    text-align: center;
+    background: #FFC200;
+
+}
+
+.headerIcons i:hover {
+    color: #000000;
+    background-color:#ffff ;
+    transform: rotate(360deg);
+
+}
+
+.headerIcons a:hover {
+    color: #000000;
+    background-color:#ffff ;
+    transform:rotateY(360deg);
+
+}
+
+#MenuButton{
+    display: none;
+}
+
+#search{
+    position: fixed;
+    top: -110%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1004;
+    background:rgba(0, 0, 0,8);
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    justify-content: center;
+}
+
+#search.active{
+    top: 0;
+}
+
+
+#SearchInput{
+    width: 50rem;
+    border-bottom: .1rem solid #FFC200;
+    background: none;
+    text-transform:none ;
+    font-size: 3rem;
+    color: #fff;
+    padding: 1rem 0;
+
+}
+
+#SearchInput::placeholder{
+    color: #ffffff;
+}
+
+#SearchInput::-webkit-search-cancel-button{
+
+    -webkit-appearance: none;
+
+}
+
+#search label{
+
+    color: #FFf;
+    cursor: pointer;
+    font-size: 3rem;
+}
+
+#SearchClose{
+    position: absolute;
+    color: #fff;
+    cursor: pointer;
+    top: 2rem;
+    right: 3rem;
+    font-size: 5rem;
+}
+
+
+.home .HomeSlider .slider{
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:2rem;
+    padding-top: 9rem;
+}
+
+
+.home .HomeSlider .slider .Content{
+
+    flex: 1 1 45rem;
+}
+
+.home .HomeSlider .slider .MenuImages{
+
+    flex: 1 1 45rem;
+}
+
+
+.home .HomeSlider .slider .MenuImages img{
+
+    width: 100%;
+
+}
+
+.Content span{
+
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 500;
+
+}
+
+.home .HomeSlider .slider .Content h3{
+    color: #FFC200;
+    font-size: 6rem;
+    
+}
+
+.home .HomeSlider .slider .Content p{
+    color: #ffffff;
+    font-size: 1.5rem;
+    padding: .5rem 0;
+    
+}
+
+.MainButton{
+    display: inline-block ;
+    font-size: 1.5rem;
+    font-weight:500;
+    margin-top: 1rem;
+    color: #000000;
+    background-color:#FFC200 ;
+    padding: .8rem 3rem;
+    border-radius: .5rem;
+    cursor:pointer;
+
+}
+
+
+.MainButton:hover{
+    font-size: 2rem;
+    color: #FFC200;
+    background-color:#1e1f20 ;
+}
+
+.swiper-pagination-bullet-active{
+    background: #FFC200;
+}
+
+.FoodSection{
+    background-image: linear-gradient(to right top, #1e1f20, #202224, #222527, #25282b, #272b2f);
+}
+
+.MenuHeading{
+    text-align: center;
+    color: #ffffff;
+    font-size: 2rem;
+    padding-top: 2rem;
+    
+}
+
+.categoryHeading{
+    text-align: center;
+    color: #FFC200;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+}
+
+
+.categoryHeading1{
+    text-align: center;
+    color: #FFC200;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    margin-top: 8rem;
+    text-decoration: overline;
+    
+}
+
+
+.FoodMenu .boxContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr) );
+    gap: 1.5rem;
+    
+}
+
+.FoodMenu .boxContainer .box{
+    padding: 2.5rem;
+    background:#FFF8EA;
+    border-radius: .5rem;
+    border: .1rem solid #000000;
+    overflow: hidden;
+    position: hidden;
+    text-align: center;
+}
+
+.FoodMenu .boxContainer .box:hover{
+    padding: 5.5rem;
+    background:#FFF8EA;
+    border-radius: .5rem;
+    border: .1rem solid #000000;
+    overflow: hidden;
+    position: hidden;
+    text-align: center;
+    
+    
+}
+
+.FoodMenu .boxContainer .box img{
+    height: 17rem;
+    margin: 1rem 0;
+}
+
+.FoodMenu .boxContainer .box h3{
+    color: #000000;
+    font-size: 1.5rem;
+}
+
+.FoodMenu .boxContainer .box span{
+    color:#1c1603 ;
+    font-weight: bold;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    text-decoration: overline underline;
+
+}
+
+.FoodMenu .boxContainer .box p{
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.ReservationForm {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: linear-gradient(to right top, #1e1f20, #202224, #222527, #25282b, #272b2f);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 228, 228, 0.1);
+}
+
+.ReserVationFormLabel {
+    display: block;
+    margin-bottom: 20px;
+    color: #ffffff;
+    margin-top: 30px;
+    font-weight: 600;
+    font-size: 2rem;
+    
+}
+
+.ReservationFormInput {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 50px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #000000;
+    background-color: #FFF8EA;
+}
+
+.FAQSection1{
+        min-height: 100vh;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.5rem;
+        color: #ffffff;
+}
+
+.FAQ{
+max-width: 700px;
+margin-top: 2rem;
+padding-bottom: 1rem;
+border-bottom: 2px solid #fff;
+cursor: pointer;}
+
+.Questions{
+display: flex;
+justify-content: space-between;
+align-items: center;
+font-size: 6rem;
+}
+
+.Questions h3{
+   font-size: 1.8rem;
+   color: #FFC200 ;
+}
+
+.answer{
+    max-height: 0;
+    overflow: hidden;
+}
+
+.answer p{
+
+    padding-top: 1rem;
+    line-height: 1.6;
+    font-size: 1.9rem;
+}
+
+.FAQ.active.answer{
+    max-height: 300px;
+}
+
+.FAQ.active svg{
+    transform: rotate(180deg);
+}
+
+
+.AboutSection{
+    background-color: linear-gradient(to right top, #1e1f20, #202224, #222527, #25282b, #272b2f);
+}
+
+.about .row{
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.about .row .aboutImages{
+    flex:1 1 45rem;
+   
+}
+
+.about .row .aboutImages img{
+    width: 100%;
+   
+}
+
+.about .row .content{
+    flex:1 1 45rem;
+}
+
+.about .row .content h3{
+    color:#FFC200 ;
+    font-size: 4rem;
+    padding: 2rem 0;
+
+}
+
+.about .row .content p{
+    color:#ffffff ;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    line-height: 2;
+
+}
+
+.about .row .content .IconContainer{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    margin-top: .5rem;
+
+}
+
+.about .row .content .IconContainer .icons{
+    background-color: #FFF8EA;
+    border-radius: .5rem;
+    border: 1rem solid #FFF8EA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1rem ;
+    flex: 1 1 17rem;
+    padding: 1.5rem 1rem;
+}
+
+.about .row .content .IconContainer .icons i{
+     font-size: 2.5rem;
+     color: #FFC200;
+}
+
+.about .row .content .IconContainer .icons span{
+    font-size: 1.5rem;
+    color: #000000;
+}
+
+.footer .box-container{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.footer .box-container .box h3{
+    padding: .5rem 0;
+    font-size: 2.1rem;
+    color:#FFC200 ;
+}
+
+.footer .box-container .box a{
+    display: block;
+    padding: .5rem 0;
+    font-size: 1.5rem;
+    color:#ffffff ;
+}
+
+.footer .box-container .box a:hover{
+    color: #FFF8EA;
+    text-decoration: underline;
+}
+
+.footer .credit{
+    text-align: center;
+    border-top: .1rem solid #FFF8EA;
+    font-size: 1.2rem;
+    color: #ffffff;
+    padding-top: 1.5rem ;
+    margin-top: 1.5rem ;
+}
+
+.footer .credit span{
+    color: #FFC200;
+}
+
+
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #323232;
+  z-index: 9;
+}
+
+/* Add styles to the form container */
+.form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: #323232;
+}
+
+.form-container h1{
+
+    color:#FFC200 ;
+    text-align: center;
+}
+
+.form-container label{
+
+    color:#ffffff ;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #FFF8EA;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #FFF8EA;
+  outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container  button{
+   
+    margin-left: 1rem;
+}
+
+
+.form-container a{
+    font-size: 1rem;
+    color: #ffffff;
+    margin-left: 1rem;
+}
+
+.regmain{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: url("../Client/Images/BackgroundImages/foodpattern.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.RegisterContainer{
+     max-width: 700px;
+    width: 100%;
+    background-color:#303030;
+    padding: 25px 30px;
+    border-radius: 5px;
+    
+    
+  }
+
+  .RegisterContainer .title{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    color: #fff;
+  }
+
+  .RegisterContainer .title::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #171717, #ffbb00);
+  }
+
+  .RegisterContainer .content form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+    color: #ffffff;
+    font-size: 1.5rem;
+    text-transform: lowercase;
+  }
+
+  .RegisterContainer form .user-details .input-box{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+    text-transform: lowercase;
+  }
+
+  .RegisterContainer form .input-box span.details{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+
+  .RegisterContainer .user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    padding-left: 15px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+    text-transform: lowercase;
+  }
+
+ 
+   .RegisterContainer form .button input{
+    padding: 1rem;
+     height: 100%;
+     width: 100%;
+     border-radius: 5px;
+     border: none;
+     color: #fff;
+     font-size: 18px;
+     font-weight: 500;
+     letter-spacing: 1px;
+     cursor: pointer;
+     transition: all 0.3s ease;
+     background: linear-gradient(135deg, #171717, #ffbb00);
+     text-transform: lowercase;
+   }
+
+   .RegisterContainer form .button input:hover{
+    
+    background: linear-gradient(-135deg, #171717, #ffbb00);;
+    }
+
+    .RegisterContainer .error{
+        color: #FFC200;
+        font-size: 2rem;
+    }
+
+    .RegisterContainer a{
+        color: #FFC200;
+        font-size: 1.5rem;
+        padding: 1.5rem;
+    }
+    
+  
+/* media Query for Mobile phones */
+
+@media (max-width:840px) {
+   
+    #MenuButton{
+        display: inline-block;
+    }
+
+    .navigationBar{
+        top: 100%;
+        left: 0;
+        right: 0;
+        position: absolute;
+        padding: 1rem;
+        background:linear-gradient(to right top, #303030, #2d2d2d, #2a2a2a, #282828, #252525);
+        border-top: .1rem solid #000000;
+        border-bottom: .1rem solid #000000;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    .navigationBar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .navigationBar a{
+        display: block;
+        margin: 1rem;
+        font-size: 2rem;
+        background:#252525 ;
+        padding: 1.5rem;
+    }
+
+   #search #SearchInput{
+    width: 90%;
+   } 
+
+   section{
+    margin-top: 5%;
+   }
+
+   .home .HomeSlider .slider .Content h3{
+    color: #FFC200;
+    font-size:4rem;
+    
+}
+
+.RegisterContainer.container .content .category{
+    flex-direction: column;
+  }
+
+  .RegisterContainer .user-details .input-box input{
+    font-size: .9rem;
+    
+  }
+
+ }
+
+ 
+@media (max-width:1020px) {
+   
+    html{
+ 
+     font-size: 50% ;
+    }
+
+    header{
+        padding: 1rem 2rem;
+        
+       }
+
+
+     section{
+        padding:  2rem;
+       }
+    
+
+     .FoodMenu .boxContainer .box img{
+        height: auto;
+        width:100% ;
+    }
+    
+    
+ }
+ 
